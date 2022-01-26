@@ -10,6 +10,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import static com.harsh.kryptic.utils.AuthConstants.HOME_URL;
 import static com.harsh.kryptic.utils.AuthConstants.SIGN_UP_URL;
 
 @EnableWebSecurity
@@ -29,6 +30,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .disable()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.POST, SIGN_UP_URL)
+                .permitAll()
+                .antMatchers(HttpMethod.GET, HOME_URL)
                 .permitAll()
                 .anyRequest()
                 .authenticated()

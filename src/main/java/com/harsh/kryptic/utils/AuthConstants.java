@@ -7,4 +7,5 @@ public class AuthConstants {
     public static final String HEADER = "Authorization";
     public static final String SIGN_UP_URL = "/user";
     public static final String LOGIN_URL = "/user/login";
+    public static final String HOME_URL = "/";
 }
