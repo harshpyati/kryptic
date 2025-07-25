@@ -12,10 +12,10 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Date;
 
@@ -29,7 +29,6 @@ public class AuthFilter extends UsernamePasswordAuthenticationFilter {
         setFilterProcessesUrl(LOGIN_URL);
     }
 
-    @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
         try {
             UserInfo userCredentials = new ObjectMapper().readValue(request.getInputStream(), UserInfo.class);
@@ -46,7 +45,6 @@ public class AuthFilter extends UsernamePasswordAuthenticationFilter {
         }
     }
 
-    @Override
     protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authResult) throws IOException, ServletException {
         String userName = ((User) authResult.getPrincipal()).getUsername();
         String accessToken = JWT

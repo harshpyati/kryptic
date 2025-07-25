@@ -1,12 +1,11 @@
 package com.harsh.kryptic.domain.user;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.harsh.kryptic.utils.Utils;
+import jakarta.persistence.*;
 import lombok.Data;
-import javax.persistence.*;
 import java.util.Date;
 
 @Data
