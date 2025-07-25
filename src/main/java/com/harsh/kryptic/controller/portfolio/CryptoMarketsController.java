@@ -1,7 +1,7 @@
 package com.harsh.kryptic.controller.portfolio;
 
 import com.harsh.kryptic.domain.thirdparty.coingecko.CoinDetails;
-import com.harsh.kryptic.service.investments.ThirdPartyAPIService;
+import com.harsh.kryptic.service.market.ThirdPartyAPIService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;

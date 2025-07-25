@@ -1,7 +1,7 @@
-package com.harsh.kryptic.service.investments.impl.thirdparty;
+package com.harsh.kryptic.service.market.impl;
 
 import com.harsh.kryptic.domain.thirdparty.coingecko.CoinDetails;
-import com.harsh.kryptic.service.investments.ThirdPartyAPIService;
+import com.harsh.kryptic.service.market.ThirdPartyAPIService;
 import com.harsh.kryptic.thirpartyapi.ApiClient;
 import com.harsh.kryptic.utils.ApiEndpoints;
 import com.harsh.kryptic.utils.Utils;

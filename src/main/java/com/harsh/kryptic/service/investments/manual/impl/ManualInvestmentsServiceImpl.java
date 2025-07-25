@@ -1,11 +1,11 @@
-package com.harsh.kryptic.service.investments.impl;
+package com.harsh.kryptic.service.investments.manual.impl;
 
 import com.harsh.kryptic.domain.Investment;
 import com.harsh.kryptic.domain.InvestmentLite;
 import com.harsh.kryptic.domain.InvestmentStatistics;
 import com.harsh.kryptic.repository.investments.InvestmentsRepo;
-import com.harsh.kryptic.service.investments.InvestmentsService;
-import com.harsh.kryptic.service.investments.ThirdPartyAPIService;
+import com.harsh.kryptic.service.investments.manual.InvestmentsService;
+import com.harsh.kryptic.service.market.ThirdPartyAPIService;
 import com.harsh.kryptic.utils.Utils;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class InvestmentsServiceImpl implements InvestmentsService {
+public class ManualInvestmentsServiceImpl implements InvestmentsService {
     @Autowired
     private InvestmentsRepo investmentRepo;
 

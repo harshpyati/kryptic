@@ -1,4 +1,4 @@
-package com.harsh.kryptic.service.investments;
+package com.harsh.kryptic.service.investments.manual;
 
 import java.util.List;
 import com.harsh.kryptic.domain.Investment;

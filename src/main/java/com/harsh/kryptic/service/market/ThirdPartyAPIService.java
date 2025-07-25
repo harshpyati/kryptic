@@ -1,4 +1,4 @@
-package com.harsh.kryptic.service.investments;
+package com.harsh.kryptic.service.market;
 
 import com.harsh.kryptic.domain.thirdparty.coingecko.CoinDetails;
 import reactor.core.publisher.Mono;

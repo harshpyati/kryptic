@@ -2,10 +2,8 @@ package com.harsh.kryptic.controller.portfolio;
 
 import com.harsh.kryptic.domain.Investment;
 
-import com.harsh.kryptic.domain.InvestmentStatistics;
 import com.harsh.kryptic.exceptions.NoRecordsFoundException;
-import com.harsh.kryptic.service.investments.InvestmentsService;
-import com.harsh.kryptic.utils.Utils;
+import com.harsh.kryptic.service.investments.manual.InvestmentsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

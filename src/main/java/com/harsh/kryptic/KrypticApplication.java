@@ -1,9 +1,9 @@
 package com.harsh.kryptic;
 
-import com.harsh.kryptic.service.investments.InvestmentsService;
-import com.harsh.kryptic.service.investments.ThirdPartyAPIService;
-import com.harsh.kryptic.service.investments.impl.InvestmentsServiceImpl;
-import com.harsh.kryptic.service.investments.impl.thirdparty.CoinGeckoAPIServiceImpl;
+import com.harsh.kryptic.service.investments.manual.InvestmentsService;
+import com.harsh.kryptic.service.market.ThirdPartyAPIService;
+import com.harsh.kryptic.service.investments.manual.impl.ManualInvestmentsServiceImpl;
+import com.harsh.kryptic.service.market.impl.CoinGeckoAPIServiceImpl;
 import com.harsh.kryptic.service.user.UserService;
 import com.harsh.kryptic.service.user.impl.UserServiceImpl;
 import org.springframework.boot.SpringApplication;
@@ -20,7 +20,7 @@ public class KrypticApplication {
 
 	@Bean
 	public InvestmentsService getInvestmentService() {
-		return new InvestmentsServiceImpl();
+		return new ManualInvestmentsServiceImpl();
 	}
 
 	@Bean
